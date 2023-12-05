@@ -1,88 +1,435 @@
-<!DOCTYPE html>
-<html>
+html {
+  height: 100%;
+  width: 100%;
+}
+#maincontainer{
+  display: flex,inline-block;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 23px;
+}
+#topheader{
+  display: flex, inline-block;
+  flex-direction: row;
+  justify-content: center;
+  background-color: none;
+  height:23px;  
+}
+#topheader #lefttopcontainer{
+  position: absolute;
+  display: flex;
+  flex-direction:row;
+  background-color: none;
+  height:23px;
+  width: 570px;
+  padding-right: 100px;
+}
+#lefttopcontainer{
+  display:inline-block;
+}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <script src="script.js"></script>
-  <div id="maincontainer">
-    <div id="topheader">
-      <div id="lefttopcontainer">
-        <img src="logo.png" alt="Logo">
-        <h5>News</h5>
-        <h5>Popular</h5>
-        <h5>Javascript</h5>
-        <h5>Css</h5>
-        <h5>Jquery</h5>
-      </div>
-      <div id="righttopcontainer">
-        <img src="hamburger.png" alt="hamburgericon">
-        <img src="search.png" alt="searchicon">
-      </div>
-    </div>
-    <div id="topcontent">
-      <div id="topcontent-first">
-        <img src="javascriptpic.jpg" alt="Javascript Post" style="height: 300px; width: 800px;">
-        <input type="button" id="javascript-button" value="JAVASCRIPT" style="width: 100px;">
-        <p id="Date">March 27,2018</p>
-        <p id="link-for-javascript">CHROME EXTENSION PROTECTS AGAINST JAVASCRIPT-BASED CPU SIDE-CHANNEL ATTACKS</p>
-      </div>
-      <div id="topcontent-second">
-        <img src="jquerypicture.jpg" alt="Jquery Post" style="height: 300px; width:800px;">
-        <input type="button" id="javascript-button" value="JAVASCRIPT" style="width: 100px;">
-        <p id="Date">March 27,2018</p>
-        <p id="link-for-javascript">CHROME EXTENSION PROTECTS AGAINST JAVASCRIPT-BASED CPU SIDE-CHANNEL ATTACKS</p>
-      </div>
-    </div>
-    <h2 id="recentposttag">Recent Posts</h2>
-    <div id="recentposts">
-      
-    </div>
-    <div id="muticontainer">
-      <div class="leftcontainer">
-        
-      </div>
-      <div class="rightcontainer">
-        <div id="mostread">
-          
-        </div>
-        <div id="featuredPosts">
-          
-        </div>
-        <div id="sampleads">
-          
-        </div>
-      </div>
-    </div>
-    <div id="featuredposts">
-      
-    </div>
-    <div id="secondmulticontainer">
-        <div class="leftcontainer">
-          
-        </div>
-        <div class="rightcontainer">
-          <div class="sampleads">
-            
-          </div>
-          <div class="categories">
-            <div id="ratecate">
-              
-            <div>
-            <div id="multibuttons">
-              
-            </div>
-            </div>
-        </div>
-    </div>
-    <div id="footer">
-      
-    </div>
-  </div>
-</body>
+#lefttopcontainer img{ 
+  width: 60px;
+  height: 50px;
+}
+#lefttopcontainer h5{
+  display: flex;
+  position: relative;
+  top:-22px;
+  justify-content: center;
+  align-items: center;
+  background-color:none;
+  height:60px;
+  padding-left: 35px;
+  border-right:1px solid #000;;
+  padding-right: 25px;
+  font-family: "Lucida Console","Courier New","monospace";
+}
+#lefttopcontainer h5:first-of-type{
+  border-left:1px solid #000;
+  font-family: "Lucida Console","Courier New","monospace";
+}
+#righttopcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  background-color: none;
+  height: 60px;
+  border-bottom: 1px solid #000;
+}
+#righttopcontainer img{
+  z-index:1;
+  width: 22px;
+  height: 23px;
+  padding-top:10px;
+  
+}
+#righttopcontainer img:first-of-type{
+  padding-right:5%;
+  
+}
+#topcontent{
+  display:inline-block,flex;
+  position:absolute;
+  z-index:1;
+  top:100px;
+  max-width:60%;
+  overflow:hidden;
+  /*79%*/
+  align-content:space-between;
+  margin-right:20%;
+  /*margin-left:9.3%;*/
+  margin-left: 14%;
+  height: 300px;
+  background-color: red,none;
+}
 
-</html>
+#topcontent #topcontent-first{
+  display:flex;
+  height:300px;
+  position:relative;
+  flex-direction: column;
+  max-width: 43%;
+  background-color: yellow;
+}
+#topcontent-first img{
+  position: absolute;
+  display:block;
+  max-width: 100%;
+  height:auto;
+  object-fit:fill;
+}
+#topcontent-first input{
+  /*
+  transform: translateX(-50);
+  background-color:darkorange;
+  margin-top:60%;
+  z-index: 1;
+  top:-50px;
+  padding-top: -50%;
+  text-align: center;  
+  color:white;
+  font-family: "Lucida Console","Courier New","monospace";
+  border-style: none;
+  */
+  position:absolute;
+  background-color: darkorange;
+  z-index: 1;
+  top: 65%; /* Adjust as needed */
+  left: 20%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Lucida Console", "Courier New", "monospace";
+  border: none;
+}
+#topcontent-first #Date{
+  /*
+  position: relative;
+  bottom: 20px;
+  left:30px;
+  margin-top:1%;
+  margin-left:40%;
+  color:white;
+  font-family:"Lucida Console", "Courier New", "monospace";
+  font-size:10px;
+  font-weight:bolder;
+  */
+  position: absolute;
+  z-index: 1;
+  top:63%;
+  left:60%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color:white;
+  font-family: "Lucida Console","Courier New","monospace";
+  font-size: 10px;
+  font-weight: bolder;
+}
+#topcontent-first #link-for-javascript{
+  /*
+  color:white; 
+  position:relative;
+  margin-top:-20px;
+  z-index: 1;
+  border:2px solid red;
+  font-family: "Lucida Console","Courier New","monospace";
+  font-weight:bolder;
+  border-style:none;
+  */
+  color: white;
+  position: relative;
+  top:63%;
+  left: 0%;
+  max-height: 100%;
+  width: 80%;
+  max-width: 100%;
+  z-index: 1;
+  border: 2px solid red,none;
+  font-family: "Lucida Console","Courier New","monospace";
+  font-weight: bolder;
+}
+#topcontent-second{
+/*
+  display:flex;
+  overflow: hidden;
+  height: 300px;
+  flex-direction: column;
+  max-width: 43%;
+  background-color: yellow;
+  */
+  position:relative;
+  overflow:hidden;
+  padding-left:30%;
+  display:flex;
+  margin-top:-300px;
+  width:110px;
+  margin-left: 57%;
+  flex-direction:column;
+  height:300px;
+  background-color: yellow;
+  border: none;
+}
+#topcontent-second img{
+  position:absolute;
+  margin-left:-70%;
+  max-width: 100%;
+  height:auto;
+  object-fit:fill;
+  display:block;
+  top:0;
+  min-width: 100%;
+}
+#topcontent-second input{
+  /*
+  background-color:darkorange;
+  z-index: 1;
+  top:-50px;
+  padding-top: -50%;
+  margin-top:160%;
+  margin-left:-210%;
+  text-align: center;  
+  color:white;
+  font-family: "Lucida Console","Courier New","monospace";
+  */
+  position:absolute;
+  background-color: darkorange;
+  z-index: 1;
+  top: 65%; /* Adjust as needed */
+  left: 20%; /* Adjust as needed */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "Lucida Console", "Courier New", "monospace";
+  border: none;
+}
+#topcontent-second #Date{
+  position: absolute;
+  z-index: 1;
+  top:63%;
+  left:60%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color:white;
+  font-family: "Lucida Console","Courier New","monospace";
+  font-size: 10px;
+  font-weight: bolder;
+  /*
+  position: relative;
+  bottom: 20px;
+  left:30px;
+  margin-top:1%;
+  margin-left:-100%;
+  color:white;
+  font-family:"Lucida Console", "Courier New", "monospace";
+  font-size:10px;
+  font-weight:bolder;
+  */
+}
+#topcontent-second #link-for-javascript{
+  color: white;
+  position: absolute;
+  top:63%;
+  left: 0%;
+  max-height: 100%;
+  width: 80%;
+  max-width: 100%;
+  z-index: 1;
+  border: 2px solid red,none;
+  font-family: "Lucida Console","Courier New","monospace";
+  font-weight: bolder;
+  /*
+  color:white; 
+  position:absolute;
+  margin-top:80%;
+  margin-left:-160%;
+  z-index: 1;
+  border:2px solid red;
+  font-family: "Lucida Console","Courier New","monospace";
+  font-weight:bolder;
+  */
+}
+#recentposttag{
+  position:absolute;
+  top: 500px;
+  left:30%;
+  font-family: "Lucida Console","Courier New","monospace";
+}  
+#recentposts{
+  position: absolute;
+  top: 600px;
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  max-width: 80%;
+  text-align: center;
+  justify-content: space-between;
+}
+#recentposts #recentpost-first-cont{
+  position: relative;
+  background-color: yellow;
+  display: flex;
+  height: 350px;
+  flex-direction: column;
+  width: 300px;
+  max-width: 35%; 
+  overflow: hidden;
+}
+#recentposts #recentpost-first-cont #img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: auto;
+  object-fit: fill;
+  display: block;
+}
+#recentposts #recentpost-first-cont input{
+  position: absolute;
+  top:75%;
+}
+#recentposts #recentpost-first-cont #Date{
+  position: absolute;
+  top:70%;
+  left:45%;
+}
+#recentposts #recentpost-first-cont #link-for-webdesign{
+  position: absolute;
+  color:black;
+  top:80%;
+  }
+#recentposts #recentpost-second-cont{
+  position: relative;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 35%;
+  overflow: hidden;
+}
+#recentposts #recentpost-second-cont #img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height:auto;
+  object-fit:fill;
+  display:block; 
+}
+#recentposts #recentpost-second-cont input{
+  position: absolute;
+  top:75%;
+}
+#recentposts #recentpost-second-cont #Date{
+  position:absolute;
+  top:70%;
+  left:45%;
+}
+#recentposts #recentpost-second-cont #link-for-javascript{
+  position:absolute;
+  color:black;
+  top:80%;
+}
+#recentposts #recentpost-third-cont{
+  position: relative;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 35%;
+  overflow: hidden;
+}
+#recentposts #recentpost-third-cont #img{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:auto;
+  object-fit:fill;
+  display:block;
+}
+#recentposts #recentpost-third-cont input{
+  position: absolute;
+  top:75%;
+}
+#recentposts #recentpost-third-cont #Date{
+
+}
+#recentposts #recentpost-third-cont #link-for-jquery{
+  color: black;
+}
+#recentposts #recentpost-fourth-cont{
+  position: relative;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 35%;
+  overflow:hidden;
+}
+#recentposts #recentpost-fourth-cont #img{
+  position:absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  display: block;
+}
+#recentposts #recentpost-fourth-cont input{
+  position:absolute;
+  top:75%;
+  height: 350px;
+}
+#recentposts #recentpost-fifth-cont{
+  position:relative;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 35%;
+  overflow: hidden;
+}
+#recentposts #recentpost-sixth-cont{
+  position:relative;
+  background-color: yellow;
+  display:flex;
+  flex-direction: column;
+  width: 300px;
+  max-width: 35%;
+  overflow:hidden;
+}
+
+/* Here we are adding more responsiveness as when the two of the container in recent posts touches each other */  
+
+@media only screen and (max-width:889px){
+  #lefttopcontainer h5{
+    display:none;
+  }
+  #righttopcontainer{
+    width: 100%;
+  }
+}
