@@ -285,14 +285,15 @@ html {
   flex-wrap: wrap;
   row-gap: 100px;
   max-width: 80%;
+  height:800px;
   text-align: center;
   justify-content: space-between;
+
 }
 #recentposts #recentpost-first-cont{
   position: relative;
   background-color: yellow;
   display: flex;
-  height: 350px;
   flex-direction: column;
   width: 300px;
   max-width: 35%; 
@@ -423,6 +424,18 @@ html {
   overflow:hidden;
 }
 
+#multicontainer{
+  position:relative;
+  background-color: blue;
+  height: 500px;
+  z-index:1;
+  width:250px;
+}
+#multicontainer .leftcontainer{
+  position:relative;
+  background-color:blue;
+}
+
 /* Here we are adding more responsiveness as when the two of the container in recent posts touches each other */  
 
 @media only screen and (max-width:889px){
@@ -431,5 +444,8 @@ html {
   }
   #righttopcontainer{
     width: 100%;
+  }
+  #recentposts{
+    height:1500px;
   }
 }
