@@ -64,11 +64,11 @@ html {
   width: 22px;
   height: 23px;
   padding-top:10px;
-  
+
 }
 #righttopcontainer img:first-of-type{
   padding-right:5%;
-  
+
 }
 #topcontent{
   display:inline-block,flex;
@@ -285,7 +285,7 @@ html {
   flex-wrap: wrap;
   row-gap: 100px;
   max-width: 80%;
-  height:800px;
+  height:900px;
   text-align: center;
   justify-content: space-between;
 
@@ -298,6 +298,7 @@ html {
   width: 300px;
   max-width: 35%; 
   overflow: hidden;
+  height:400px;
 }
 #recentposts #recentpost-first-cont #img{
   position: absolute;
@@ -329,6 +330,7 @@ html {
   flex-direction: column;
   width: 300px;
   max-width: 35%;
+  height:400px;
   overflow: hidden;
 }
 #recentposts #recentpost-second-cont #img{
@@ -361,6 +363,7 @@ html {
   flex-direction: column;
   width: 300px;
   max-width: 35%;
+  height:400px;
   overflow: hidden;
 }
 #recentposts #recentpost-third-cont #img{
@@ -377,10 +380,14 @@ html {
   top:75%;
 }
 #recentposts #recentpost-third-cont #Date{
-
+  position:absolute;
+  top:70%;
+  left:45%;
 }
 #recentposts #recentpost-third-cont #link-for-jquery{
-  color: black;
+  position:absolute;
+  color:black;
+  top:80%;
 }
 #recentposts #recentpost-fourth-cont{
   position: relative;
@@ -389,6 +396,7 @@ html {
   flex-direction: column;
   width: 300px;
   max-width: 35%;
+  height:400px;
   overflow:hidden;
 }
 #recentposts #recentpost-fourth-cont #img{
@@ -401,9 +409,18 @@ html {
   display: block;
 }
 #recentposts #recentpost-fourth-cont input{
-  position:absolute;
+  position: absolute;
   top:75%;
-  height: 350px;
+}
+#recentposts #recentpost-fourth-cont #Date{
+  position:absolute;
+  top:70%;
+  left:45%;
+}
+#recentposts #recentpost-fourth-cont #link-for-javascript{
+  position:absolute;
+  color:black;
+  top:80%;
 }
 #recentposts #recentpost-fifth-cont{
   position:relative;
@@ -411,8 +428,23 @@ html {
   display: flex;
   flex-direction: column;
   width: 300px;
+  height:400px;
   max-width: 35%;
   overflow: hidden;
+}
+#recentposts #recentpost-fifth-cont input{
+  position: absolute;
+  top:75%;
+}
+#recentposts #recentpost-fifth-cont #Date{
+  position:absolute;
+  top:70%;
+  left:45%;
+}
+#recentposts #recentpost-fifth-cont #link-for-css{
+  position:absolute;
+  color:black;
+  top:80%;
 }
 #recentposts #recentpost-sixth-cont{
   position:relative;
@@ -420,10 +452,24 @@ html {
   display:flex;
   flex-direction: column;
   width: 300px;
+  height:400px;
   max-width: 35%;
   overflow:hidden;
 }
-
+#recentposts #recentpost-sixth-cont input{
+  position: absolute;
+  top:75%;
+}
+#recentposts #recentpost-sixth-cont #Date{
+  position:absolute;
+  top:70%;
+  left:45%;
+}
+#recentposts #recentpost-sixth-cont #link-for-webdesign{
+  position:absolute;
+  color:black;
+  top:80%;
+}
 #multicontainer{
   position:relative;
   background-color: blue;
@@ -447,5 +493,10 @@ html {
   }
   #recentposts{
     height:1500px;
+  }
+}
+@media only screen and (max-width:1124px){
+  #recentposts{
+    height: 1500px;
   }
 }
