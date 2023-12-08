@@ -8,7 +8,8 @@ html {
   justify-content: center;
   padding-left: 10%;
   padding-right: 10%;
-  height: 23px;
+  height: 100;
+  background-color: blue,none;
 }
 #topheader{
   display: flex, inline-block;
@@ -472,14 +473,44 @@ html {
 }
 #multicontainer{
   position:relative;
+  display:flex;
+  flex-direction: row;
+  row-gap: 20px;
+  justify-content: space-between;
   background-color: blue;
-  height: 500px;
-  z-index:1;
-  width:250px;
+  height: auto;
+  z-index:0;
+  width:auto;
+  top: 1500px;
 }
-#multicontainer .leftcontainer{
-  position:relative;
-  background-color:blue;
+#multicontainer #leftcontainer{
+  position: absolute;
+  z-index: 1;
+  background-color:#0af570;
+  height:150px;
+  width: 500px;
+  display: flex;
+  flex-direction:wrap;
+}
+#multicontainer #rightcontainer{
+  z-index: 1;
+  background-color: #06ea34;
+  height: 150px;
+  width: 250px;
+  display:flex;
+  flex-direction: row;
+}
+#multicontainer #rightcontainer h3{
+  color: white;
+}
+
+
+
+
+/*changing the footer*/
+#footer{
+  position: absolute;
+  bottom: 0px;
 }
 
 /* Here we are adding more responsiveness as when the two of the container in recent posts touches each other */  
