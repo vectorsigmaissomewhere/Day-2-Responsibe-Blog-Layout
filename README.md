@@ -8,7 +8,7 @@ It is not reponsive enough
 
 Moving towards Day 3 which is Project number 3 
 
-If I got more time I will fik the bug 
+If I got more time I will fix the css bug 
 
 My css file from line number 400(I don't know the exact number of line). It is not working
 
