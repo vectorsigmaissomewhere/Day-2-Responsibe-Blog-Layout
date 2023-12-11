@@ -2,7 +2,7 @@
 
 In my day 2 I am creating a responsibe Blog Layout
 
-It's been 2 weeks working on it every 5 hours everyday
+It's been 3 weeks working on it every 5 hours everyday
 
 It is not reponsive enough
 
