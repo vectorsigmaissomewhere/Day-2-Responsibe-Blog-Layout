@@ -190,7 +190,7 @@ html {
   margin-left: 57%;
   flex-direction:column;
   height:300px;
-  background-color: yellow;
+  background-color: yellow,none;
   border: none;
 }
 #topcontent-second img{
@@ -281,7 +281,7 @@ html {
 #recentposts{
   position: absolute;
   top: 600px;
-  background-color: red;
+  background-color: red,none;
   display: flex;
   flex-wrap: wrap;
   row-gap: 100px;
@@ -293,7 +293,7 @@ html {
 }
 #recentposts #recentpost-first-cont{
   position: relative;
-  background-color: yellow;
+  background-color: yellow,none;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -312,6 +312,8 @@ html {
 }
 #recentposts #recentpost-first-cont input{
   position: absolute;
+  background-color: darkorange;
+  border: none;
   top:75%;
 }
 #recentposts #recentpost-first-cont #Date{
@@ -326,7 +328,7 @@ html {
   }
 #recentposts #recentpost-second-cont{
   position: relative;
-  background-color: yellow;
+  background-color: yellow,none;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -345,6 +347,8 @@ html {
 }
 #recentposts #recentpost-second-cont input{
   position: absolute;
+  background-color: darkorange;
+  border: none;
   top:75%;
 }
 #recentposts #recentpost-second-cont #Date{
@@ -359,7 +363,7 @@ html {
 }
 #recentposts #recentpost-third-cont{
   position: relative;
-  background-color: yellow;
+  background-color: yellow,none;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -378,6 +382,8 @@ html {
 }
 #recentposts #recentpost-third-cont input{
   position: absolute;
+  background-color: darkorange;
+  border: none;
   top:75%;
 }
 #recentposts #recentpost-third-cont #Date{
@@ -392,7 +398,7 @@ html {
 }
 #recentposts #recentpost-fourth-cont{
   position: relative;
-  background-color: yellow;
+  background-color: yellow,none;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -411,6 +417,8 @@ html {
 }
 #recentposts #recentpost-fourth-cont input{
   position: absolute;
+  background-color: darkorange;
+  border: none;
   top:75%;
 }
 #recentposts #recentpost-fourth-cont #Date{
@@ -425,7 +433,7 @@ html {
 }
 #recentposts #recentpost-fifth-cont{
   position:relative;
-  background-color: yellow;
+  background-color: yellow,none;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -435,6 +443,8 @@ html {
 }
 #recentposts #recentpost-fifth-cont input{
   position: absolute;
+  background-color: darkorange;
+  border: none;
   top:75%;
 }
 #recentposts #recentpost-fifth-cont #Date{
@@ -449,7 +459,7 @@ html {
 }
 #recentposts #recentpost-sixth-cont{
   position:relative;
-  background-color: yellow;
+  background-color: yellow,none;
   display:flex;
   flex-direction: column;
   width: 300px;
@@ -459,6 +469,8 @@ html {
 }
 #recentposts #recentpost-sixth-cont input{
   position: absolute;
+  background-color: darkorange;
+  border: none;
   top:75%;
 }
 #recentposts #recentpost-sixth-cont #Date{
@@ -477,7 +489,7 @@ html {
   flex-direction: row;
   row-gap: 20px;
   justify-content: space-between;
-  background-color: blue;
+  background-color: blue,none;
   height: auto;
   z-index:0;
   width:auto;
@@ -489,8 +501,16 @@ html {
   background-color:#0af570;
   height:150px;
   width: 500px;
+  max-width: 100%;
   display: flex;
   flex-direction:wrap;
+  align-items: stretch;
+}
+#multicontainer #leftcontainer #leftcontainer-jquery{
+  position: relative;
+  background-color: red;
+  display:flex;
+  flex-direction:column;
 }
 #multicontainer #rightcontainer{
   z-index: 1;
